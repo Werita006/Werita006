@@ -1,0 +1,10 @@
+eval 'set +o history' 2>/dev/null || setopt HIST_IGNORE_SPACE 2>/dev/null
+ touch ~/.gitcookies
+ chmod 0600 ~/.gitcookies
+
+ git config --global http.cookiefile ~/.gitcookies
+
+ tr , \\t <<\__END__ >>~/.gitcookies
+nest-open-source.googlesource.com,FALSE,/,TRUE,2147483647,o,git-cintyamiranda707.gmail.com=1//0fjJzqiHv12V0CgYIARAAGA8SNwF-L9Irgx4QeyqqgJih9bvJtFyQJZxdtgxlgj3932qWT-zEPB1jE_4-n6vBGI51QuVq3lNdmWQ
+__END__
+eval 'set -o history' 2>/dev/null || unsetopt HIST_IGNORE_SPACE 2>/dev/null
